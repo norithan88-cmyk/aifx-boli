@@ -1,0 +1,65 @@
+{
+  "by_threshold": {
+    "3.0": {
+      "trades": [],
+      "stats": {
+        "total_closed": 0,
+        "wins": 0,
+        "losses": 0,
+        "win_rate_pct": null,
+        "profit_factor": null,
+        "total_pips": 0.0,
+        "avg_pips_per_trade": null
+      }
+    },
+    "5.0": {
+      "trades": [],
+      "stats": {
+        "total_closed": 0,
+        "wins": 0,
+        "losses": 0,
+        "win_rate_pct": null,
+        "profit_factor": null,
+        "total_pips": 0.0,
+        "avg_pips_per_trade": null
+      }
+    },
+    "10.0": {
+      "trades": [],
+      "stats": {
+        "total_closed": 0,
+        "wins": 0,
+        "losses": 0,
+        "win_rate_pct": null,
+        "profit_factor": null,
+        "total_pips": 0.0,
+        "avg_pips_per_trade": null
+      }
+    },
+    "15.0": {
+      "trades": [],
+      "stats": {
+        "total_closed": 0,
+        "wins": 0,
+        "losses": 0,
+        "win_rate_pct": null,
+        "profit_factor": null,
+        "total_pips": 0.0,
+        "avg_pips_per_trade": null
+      }
+    },
+    "20.0": {
+      "trades": [],
+      "stats": {
+        "total_closed": 0,
+        "wins": 0,
+        "losses": 0,
+        "win_rate_pct": null,
+        "profit_factor": null,
+        "total_pips": 0.0,
+        "avg_pips_per_trade": null
+      }
+    }
+  },
+  "updated_at_utc": "2026-08-20T05:25:52.036208+00:00"
+}
