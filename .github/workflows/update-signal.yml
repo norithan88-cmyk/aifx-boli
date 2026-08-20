@@ -32,3 +32,17 @@ jobs:
           git diff --cached --quiet && echo "変更なし。コミットをスキップします。" || git commit -m "chore: update signal.json ($(date -u +'%Y-%m-%d %H:%M UTC'))"
           git pull --rebase origin main || { echo "::warning::別の実行と競合したため、今回の更新はスキップします（次回の実行で自動的に解消されます）"; git rebase --abort; exit 0; }
           git push
+
+      - name: Compute H1H4 trigger-threshold experiment log
+        run: python scripts/experiment_h1h4_trigger.py
+        continue-on-error: true
+
+      - name: Commit experiment_h1h4_log.json
+        run: |
+          git config user.name "aifx-boli-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add experiment_h1h4_log.json
+          git diff --cached --quiet && echo "変更なし。コミットをスキップします。" || git commit -m "chore: update experiment_h1h4_log.json ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+          git pull --rebase origin main || { echo "::warning::別の実行と競合したため、今回の更新はスキップします（次回の実行で自動的に解消されます）"; git rebase --abort; exit 0; }
+          git push
+        continue-on-error: true
