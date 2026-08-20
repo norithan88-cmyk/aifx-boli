@@ -57,6 +57,7 @@ EDGE_THRESHOLD = 1.3
 REVERT_WINDOW = 10
 REVERT_MIN_PIPS = 3.0
 SL_BUFFER_PIPS = 3.0
+WATCH_MIN_PIPS = 1.0  # 「もうすぐ来るかも」の事前警告(pre_alert)を出す反発量のしきい値
 
 
 def http_get_json(url, retries=3, wait_sec=5):
@@ -166,6 +167,42 @@ def detect_reversal_setup(bars, ch, direction):
         if (peak - latest) * 100 < REVERT_MIN_PIPS:
             return None
         return peak
+
+
+def detect_watch_setup(bars, ch, direction):
+    """
+    正式シグナル(3pips反発)にはまだ届いていないが、バンド際まで達して反発し始めている
+    (WATCH_MIN_PIPS以上戻っている)状態を検出する。「もうすぐ来るかも」の事前警告用。
+    正式シグナルが出ている時にはこちらは呼ばない想定(bias=="WAIT"の時だけ使う)。
+    """
+    if len(bars) < REVERT_WINDOW:
+        return None
+    recent = bars[-REVERT_WINDOW:]
+    closes = [b["c"] for b in recent]
+    latest = closes[-1]
+    sigma, mid = ch["sigma"], ch["mid"]
+    if direction == "BUY":
+        trough_idx = min(range(len(closes)), key=lambda i: closes[i])
+        trough = closes[trough_idx]
+        if trough_idx == len(closes) - 1:
+            return None
+        if (trough - mid) / sigma > -EDGE_THRESHOLD:
+            return None
+        reverted_pips = (latest - trough) * 100
+        if reverted_pips < WATCH_MIN_PIPS:
+            return None
+        return {"extreme": trough, "reverted_pips": round(reverted_pips, 1)}
+    else:
+        peak_idx = max(range(len(closes)), key=lambda i: closes[i])
+        peak = closes[peak_idx]
+        if peak_idx == len(closes) - 1:
+            return None
+        if (peak - mid) / sigma < EDGE_THRESHOLD:
+            return None
+        reverted_pips = (peak - latest) * 100
+        if reverted_pips < WATCH_MIN_PIPS:
+            return None
+        return {"extreme": peak, "reverted_pips": round(reverted_pips, 1)}
 
 
 def build_confidence_breakdown(bias, candidate, timeframes, confidence):
@@ -302,6 +339,21 @@ def build_signal(out_path=None):
     extreme = detect_reversal_setup(m5, ch_5m, candidate) if candidate else None
     bias = candidate if (candidate and extreme is not None) else "WAIT"
 
+    pre_alert = None
+    if bias == "WAIT" and candidate is not None:
+        watch = detect_watch_setup(m5, ch_5m, candidate)
+        if watch:
+            pre_alert = {
+                "direction": candidate,
+                "reverted_pips": watch["reverted_pips"],
+                "needed_pips": REVERT_MIN_PIPS,
+                "note": (
+                    f"{'押し目買い' if candidate == 'BUY' else '戻り売り'}方向の反発が始まっています"
+                    f"（{watch['reverted_pips']}pips反発／確定には{REVERT_MIN_PIPS:.0f}pips必要）。"
+                    "このまま反発が続けば、まもなくシグナルが確定する可能性があります。"
+                ),
+            }
+
     if bias in ("SELL", "BUY"):
         avg_abs_pos = sum(abs(tf["channel"]["position"]) for tf in timeframes) / len(timeframes)
         confidence = 50 + 30 + min(avg_abs_pos, 3.0) * 5
@@ -383,6 +435,7 @@ def build_signal(out_path=None):
         "volatility_risk": volatility_risk,
         "market_mode": market_mode,
         "market_mode_note": market_mode_note,
+        "pre_alert": pre_alert,
         "priority_trade": {
             "lead": trade_lead,
             "entry": round(entry, 3) if entry is not None else None,
