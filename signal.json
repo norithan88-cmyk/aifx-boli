@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-21T21:15:26.442153+00:00",
+  "generated_at_utc": "2026-08-21T21:42:54.346513+00:00",
   "pair": "USD/JPY（ボリンジャーバンド版）",
   "latest_price": 158.862,
   "day_change_pct": 0.0,
@@ -28,10 +28,10 @@
     {
       "key": "h1",
       "label": "1時間足",
-      "position_sigma": 0.18,
+      "position_sigma": 0.23,
       "momentum": "FLAT",
-      "mid": 158.834,
-      "upper": 159.14,
+      "mid": 158.827,
+      "upper": 159.127,
       "lower": 158.528
     },
     {
