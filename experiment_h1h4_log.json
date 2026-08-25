@@ -1,7 +1,18 @@
 {
   "by_threshold": {
     "3.0": {
-      "trades": [],
+      "trades": [
+        {
+          "opened_at_utc": "2026-08-25T03:09:14.898988+00:00",
+          "bias": "BUY",
+          "entry": 159.341,
+          "take_profit": 159.43,
+          "stop_loss": 159.222,
+          "status": "OPEN",
+          "closed_at_utc": null,
+          "pips": null
+        }
+      ],
       "stats": {
         "total_closed": 0,
         "wins": 0,
@@ -13,7 +24,18 @@
       }
     },
     "5.0": {
-      "trades": [],
+      "trades": [
+        {
+          "opened_at_utc": "2026-08-25T03:09:14.898988+00:00",
+          "bias": "BUY",
+          "entry": 159.341,
+          "take_profit": 159.43,
+          "stop_loss": 159.202,
+          "status": "OPEN",
+          "closed_at_utc": null,
+          "pips": null
+        }
+      ],
       "stats": {
         "total_closed": 0,
         "wins": 0,
@@ -61,5 +83,5 @@
       }
     }
   },
-  "updated_at_utc": "2026-08-25T02:05:14.481689+00:00"
+  "updated_at_utc": "2026-08-25T03:09:14.898988+00:00"
 }
