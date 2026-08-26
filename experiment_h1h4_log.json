@@ -44,6 +44,16 @@
           "status": "WIN",
           "closed_at_utc": "2026-08-25T08:07:00.292989+00:00",
           "pips": 12.1
+        },
+        {
+          "opened_at_utc": "2026-08-26T16:48:10.297421+00:00",
+          "bias": "BUY",
+          "entry": 159.382,
+          "take_profit": 159.456,
+          "stop_loss": 159.258,
+          "status": "OPEN",
+          "closed_at_utc": null,
+          "pips": null
         }
       ],
       "stats": {
@@ -93,5 +103,5 @@
       }
     }
   },
-  "updated_at_utc": "2026-08-26T15:56:27.855690+00:00"
+  "updated_at_utc": "2026-08-26T16:48:10.297421+00:00"
 }
