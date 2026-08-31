@@ -34,21 +34,21 @@
       "take_profit": 160.301,
       "stop_loss": 159.945,
       "confidence": 91,
-      "status": "OPEN",
-      "closed_at_utc": null,
-      "closed_price": null,
-      "pips": null
+      "status": "LOSS",
+      "closed_at_utc": "2026-08-31T01:37:58.871878+00:00",
+      "closed_price": 159.827,
+      "pips": -31.1
     }
   ],
   "stats": {
-    "total_closed": 2,
+    "total_closed": 3,
     "wins": 1,
-    "losses": 1,
-    "win_rate_pct": 50.0,
+    "losses": 2,
+    "win_rate_pct": 33.3,
     "avg_win_pips": 12.2,
-    "avg_loss_pips": -6.7,
-    "profit_factor": 1.82,
-    "total_pips": 5.5
+    "avg_loss_pips": -18.9,
+    "profit_factor": 0.32,
+    "total_pips": -25.6
   },
-  "updated_at_utc": "2026-08-30T23:43:11.764246+00:00"
+  "updated_at_utc": "2026-08-31T01:37:58.871878+00:00"
 }
