@@ -38,19 +38,19 @@
           "entry": 160.313,
           "take_profit": 160.48,
           "stop_loss": 160.116,
-          "status": "OPEN",
-          "closed_at_utc": null,
-          "pips": null
+          "status": "LOSS",
+          "closed_at_utc": "2026-09-02T05:46:10.908570+00:00",
+          "pips": -39.8
         }
       ],
       "stats": {
-        "total_closed": 3,
+        "total_closed": 4,
         "wins": 1,
-        "losses": 2,
-        "win_rate_pct": 33.3,
-        "profit_factor": 0.32,
-        "total_pips": -26.3,
-        "avg_pips_per_trade": -8.8
+        "losses": 3,
+        "win_rate_pct": 25.0,
+        "profit_factor": 0.15,
+        "total_pips": -66.1,
+        "avg_pips_per_trade": -16.5
       }
     },
     "5.0": {
@@ -91,19 +91,19 @@
           "entry": 160.313,
           "take_profit": 160.48,
           "stop_loss": 160.096,
-          "status": "OPEN",
-          "closed_at_utc": null,
-          "pips": null
+          "status": "LOSS",
+          "closed_at_utc": "2026-09-02T05:46:10.908570+00:00",
+          "pips": -39.8
         }
       ],
       "stats": {
-        "total_closed": 3,
+        "total_closed": 4,
         "wins": 1,
-        "losses": 2,
-        "win_rate_pct": 33.3,
-        "profit_factor": 0.23,
-        "total_pips": -40.3,
-        "avg_pips_per_trade": -13.4
+        "losses": 3,
+        "win_rate_pct": 25.0,
+        "profit_factor": 0.13,
+        "total_pips": -80.1,
+        "avg_pips_per_trade": -20.0
       }
     },
     "10.0": {
@@ -124,19 +124,19 @@
           "entry": 160.313,
           "take_profit": 160.48,
           "stop_loss": 160.046,
-          "status": "OPEN",
-          "closed_at_utc": null,
-          "pips": null
+          "status": "LOSS",
+          "closed_at_utc": "2026-09-02T05:46:10.908570+00:00",
+          "pips": -39.8
         }
       ],
       "stats": {
-        "total_closed": 1,
+        "total_closed": 2,
         "wins": 0,
-        "losses": 1,
+        "losses": 2,
         "win_rate_pct": 0.0,
         "profit_factor": 0.0,
-        "total_pips": -32.0,
-        "avg_pips_per_trade": -32.0
+        "total_pips": -71.8,
+        "avg_pips_per_trade": -35.9
       }
     },
     "15.0": {
@@ -157,19 +157,19 @@
           "entry": 160.313,
           "take_profit": 160.48,
           "stop_loss": 159.996,
-          "status": "OPEN",
-          "closed_at_utc": null,
-          "pips": null
+          "status": "LOSS",
+          "closed_at_utc": "2026-09-02T05:46:10.908570+00:00",
+          "pips": -39.8
         }
       ],
       "stats": {
-        "total_closed": 1,
+        "total_closed": 2,
         "wins": 0,
-        "losses": 1,
+        "losses": 2,
         "win_rate_pct": 0.0,
         "profit_factor": 0.0,
-        "total_pips": -32.0,
-        "avg_pips_per_trade": -32.0
+        "total_pips": -71.8,
+        "avg_pips_per_trade": -35.9
       }
     },
     "20.0": {
@@ -185,5 +185,5 @@
       }
     }
   },
-  "updated_at_utc": "2026-09-02T01:05:59.284588+00:00"
+  "updated_at_utc": "2026-09-02T05:46:10.908570+00:00"
 }
