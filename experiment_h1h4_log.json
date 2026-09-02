@@ -31,6 +31,16 @@
           "status": "LOSS",
           "closed_at_utc": "2026-08-31T01:38:01.031876+00:00",
           "pips": -32.0
+        },
+        {
+          "opened_at_utc": "2026-09-02T01:05:59.284588+00:00",
+          "bias": "BUY",
+          "entry": 160.313,
+          "take_profit": 160.48,
+          "stop_loss": 160.116,
+          "status": "OPEN",
+          "closed_at_utc": null,
+          "pips": null
         }
       ],
       "stats": {
@@ -74,6 +84,16 @@
           "status": "LOSS",
           "closed_at_utc": "2026-08-31T01:38:01.031876+00:00",
           "pips": -32.0
+        },
+        {
+          "opened_at_utc": "2026-09-02T01:05:59.284588+00:00",
+          "bias": "BUY",
+          "entry": 160.313,
+          "take_profit": 160.48,
+          "stop_loss": 160.096,
+          "status": "OPEN",
+          "closed_at_utc": null,
+          "pips": null
         }
       ],
       "stats": {
@@ -97,6 +117,16 @@
           "status": "LOSS",
           "closed_at_utc": "2026-08-31T01:38:01.031876+00:00",
           "pips": -32.0
+        },
+        {
+          "opened_at_utc": "2026-09-02T01:05:59.284588+00:00",
+          "bias": "BUY",
+          "entry": 160.313,
+          "take_profit": 160.48,
+          "stop_loss": 160.046,
+          "status": "OPEN",
+          "closed_at_utc": null,
+          "pips": null
         }
       ],
       "stats": {
@@ -120,6 +150,16 @@
           "status": "LOSS",
           "closed_at_utc": "2026-08-31T01:38:01.031876+00:00",
           "pips": -32.0
+        },
+        {
+          "opened_at_utc": "2026-09-02T01:05:59.284588+00:00",
+          "bias": "BUY",
+          "entry": 160.313,
+          "take_profit": 160.48,
+          "stop_loss": 159.996,
+          "status": "OPEN",
+          "closed_at_utc": null,
+          "pips": null
         }
       ],
       "stats": {
@@ -145,5 +185,5 @@
       }
     }
   },
-  "updated_at_utc": "2026-09-01T23:18:20.708113+00:00"
+  "updated_at_utc": "2026-09-02T01:05:59.284588+00:00"
 }
