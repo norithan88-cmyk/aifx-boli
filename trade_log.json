@@ -51,6 +51,19 @@
       "closed_at_utc": "2026-09-02T05:46:08.951761+00:00",
       "closed_price": 159.915,
       "pips": -40.6
+    },
+    {
+      "id": "2026-09-08T00:12:14.011977+00:00",
+      "opened_at_utc": "2026-09-08T00:12:14.011977+00:00",
+      "bias": "SELL",
+      "entry": 153.778,
+      "take_profit": 153.543,
+      "stop_loss": 154.043,
+      "confidence": 89,
+      "status": "OPEN",
+      "closed_at_utc": null,
+      "closed_price": null,
+      "pips": null
     }
   ],
   "stats": {
@@ -63,5 +76,5 @@
     "profit_factor": 0.16,
     "total_pips": -66.2
   },
-  "updated_at_utc": "2026-09-07T22:01:13.004434+00:00"
+  "updated_at_utc": "2026-09-08T00:12:14.011977+00:00"
 }
