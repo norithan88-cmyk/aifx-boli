@@ -1,50 +1,53 @@
 {
-  "generated_at_utc": "2026-09-16T14:55:51.655424+00:00",
+  "generated_at_utc": "2026-09-16T18:39:54.424294+00:00",
   "pair": "USD/JPY（ボリンジャーバンド版）",
-  "latest_price": 155.164,
+  "latest_price": 155.777,
   "day_change_pct": 0.0,
   "signal": {
-    "bias": "WAIT",
-    "bias_label": "方向感なし",
-    "stars": 2,
-    "confidence": 50,
+    "bias": "BUY",
+    "bias_label": "押し目買い優勢",
+    "stars": 5,
+    "confidence": 92,
     "confidence_breakdown": {
-      "timeframes_note": "1時間足:中央 / 4時間足:中央 → 2時間足の方向が一致していません",
-      "calc_note": "2時間足の方向が揃っていないため、基本値50%のままです。"
+      "timeframes_note": "1時間足:上方向 / 4時間足:上方向 → 2時間足とも一致、5分足の反発シグナルも確認済み",
+      "calc_note": "基本50% + 2時間足一致30% + バンド際からの乖離度ボーナス = 92%（上限95%）"
     }
   },
   "volatility_risk": "LOW",
-  "market_mode": "RANGE",
-  "market_mode_note": "時間足ごとに方向が割れており、方向感に乏しいレンジ地合い。",
+  "market_mode": "TREND",
+  "market_mode_note": "1時間・4時間足の方向が揃っており、方向感のある地合い。",
   "pre_alert": null,
   "priority_trade": {
-    "lead": "様子見 ― 1時間・4時間足の方向が一致していない",
-    "entry": null,
-    "take_profit": null,
-    "stop_loss": null
+    "lead": "押し目買い ― 上位足の上昇方向一致＋5分足の押し目からの反発",
+    "entry": 155.777,
+    "take_profit": 156.564,
+    "stop_loss": 154.96
   },
-  "reversal_setup": null,
+  "reversal_setup": {
+    "extreme": 154.99,
+    "reverted_pips": 78.7
+  },
   "regression_channels": [
     {
       "key": "h1",
       "label": "1時間足",
-      "position_sigma": -0.14,
-      "momentum": "FLAT",
-      "mid": 155.178,
-      "upper": 155.432,
-      "lower": 154.925
+      "position_sigma": 2.39,
+      "momentum": "UP",
+      "mid": 155.189,
+      "upper": 155.68,
+      "lower": 154.697
     },
     {
       "key": "h4",
       "label": "4時間足",
-      "position_sigma": 0.95,
-      "momentum": "FLAT",
-      "mid": 154.842,
-      "upper": 155.514,
-      "lower": 154.171
+      "position_sigma": 2.21,
+      "momentum": "UP",
+      "mid": 154.93,
+      "upper": 155.696,
+      "lower": 154.164
     }
   ],
-  "commentary": "方向感のない日は、休むも相場。無理に取りにいかない。",
-  "market_context": "USD/JPYは現在155.164円付近で推移（直近1時間比+0.00%）。1時間・4時間足の方向が揃っておらず、方向感に乏しいレンジ地合い。明確な方向一致が出るまでは、無理に取りにいかず様子見が無難な局面。※このまとめは実データから自動生成された定型解説です（ボリンジャーバンド版）。",
+  "commentary": "押し目は焦らず拾う。飛び乗りより、待つ勇気を。",
+  "market_context": "USD/JPYは現在155.777円付近で推移（直近1時間比+0.00%）。1時間・4時間足が揃って下値の堅さを示す中、5分足が短期的な押し目から反発したタイミング。目先は下値の堅い展開が想定され、押し目を焦らず拾うスタンスが機能しやすい局面。※このまとめは実データから自動生成された定型解説です（ボリンジャーバンド版）。",
   "disclaimer": "本データはルールベースの参考情報であり、投資成果を保証するものではありません。本サイトは線形回帰チャネル版（aifxlabo.com）に対するボリンジャーバンド版の比較実験サイトです。現在のロジック「1時間・4時間足の方向一致＋5分足の反発」（LOOKBACK=15）は、19ヶ月分のUSD/JPY実データ（2025年1月〜2026年7月）で343件・勝率77.8%・プロフィットファクター2.58・合計+2,501pips（BUY220件PF3.10／SELL123件PF2.13、両方向とも安定してプラス）という結果でしたが、実際の運用成績はこれと異なる可能性があります。"
 }
