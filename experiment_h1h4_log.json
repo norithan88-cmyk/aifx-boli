@@ -41,6 +41,16 @@
           "status": "LOSS",
           "closed_at_utc": "2026-09-02T05:46:10.908570+00:00",
           "pips": -39.8
+        },
+        {
+          "opened_at_utc": "2026-09-16T00:50:29.573704+00:00",
+          "bias": "BUY",
+          "entry": 155.347,
+          "take_profit": 155.551,
+          "stop_loss": 155.113,
+          "status": "OPEN",
+          "closed_at_utc": null,
+          "pips": null
         }
       ],
       "stats": {
@@ -94,6 +104,16 @@
           "status": "LOSS",
           "closed_at_utc": "2026-09-02T05:46:10.908570+00:00",
           "pips": -39.8
+        },
+        {
+          "opened_at_utc": "2026-09-16T00:50:29.573704+00:00",
+          "bias": "BUY",
+          "entry": 155.347,
+          "take_profit": 155.551,
+          "stop_loss": 155.093,
+          "status": "OPEN",
+          "closed_at_utc": null,
+          "pips": null
         }
       ],
       "stats": {
@@ -127,6 +147,16 @@
           "status": "LOSS",
           "closed_at_utc": "2026-09-02T05:46:10.908570+00:00",
           "pips": -39.8
+        },
+        {
+          "opened_at_utc": "2026-09-16T00:50:29.573704+00:00",
+          "bias": "BUY",
+          "entry": 155.347,
+          "take_profit": 155.551,
+          "stop_loss": 155.043,
+          "status": "OPEN",
+          "closed_at_utc": null,
+          "pips": null
         }
       ],
       "stats": {
@@ -160,6 +190,16 @@
           "status": "LOSS",
           "closed_at_utc": "2026-09-02T05:46:10.908570+00:00",
           "pips": -39.8
+        },
+        {
+          "opened_at_utc": "2026-09-16T00:50:29.573704+00:00",
+          "bias": "BUY",
+          "entry": 155.347,
+          "take_profit": 155.551,
+          "stop_loss": 154.993,
+          "status": "OPEN",
+          "closed_at_utc": null,
+          "pips": null
         }
       ],
       "stats": {
@@ -173,7 +213,18 @@
       }
     },
     "20.0": {
-      "trades": [],
+      "trades": [
+        {
+          "opened_at_utc": "2026-09-16T00:50:29.573704+00:00",
+          "bias": "BUY",
+          "entry": 155.347,
+          "take_profit": 155.551,
+          "stop_loss": 154.943,
+          "status": "OPEN",
+          "closed_at_utc": null,
+          "pips": null
+        }
+      ],
       "stats": {
         "total_closed": 0,
         "wins": 0,
@@ -185,5 +236,5 @@
       }
     }
   },
-  "updated_at_utc": "2026-09-15T22:46:06.442643+00:00"
+  "updated_at_utc": "2026-09-16T00:50:29.573704+00:00"
 }
