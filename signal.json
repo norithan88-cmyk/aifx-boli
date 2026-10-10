@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-10T09:04:31.613821+00:00",
+  "generated_at_utc": "2026-10-10T15:17:47.782926+00:00",
   "pair": "USD/JPY（ボリンジャーバンド版）",
   "latest_price": 158.246,
   "day_change_pct": -0.02,
@@ -28,11 +28,11 @@
     {
       "key": "h1",
       "label": "1時間足",
-      "position_sigma": -0.45,
+      "position_sigma": -0.44,
       "momentum": "FLAT",
-      "mid": 158.28,
-      "upper": 158.429,
-      "lower": 158.131
+      "mid": 158.279,
+      "upper": 158.428,
+      "lower": 158.13
     },
     {
       "key": "h4",
@@ -40,8 +40,8 @@
       "position_sigma": 0.57,
       "momentum": "FLAT",
       "mid": 158.171,
-      "upper": 158.436,
-      "lower": 157.905
+      "upper": 158.435,
+      "lower": 157.907
     }
   ],
   "commentary": "方向感のない日は、休むも相場。無理に取りにいかない。",
