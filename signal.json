@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-25T06:50:41.628036+00:00",
+  "generated_at_utc": "2026-10-25T12:10:44.115666+00:00",
   "pair": "USD/JPY（ボリンジャーバンド版）",
   "latest_price": 156.814,
   "day_change_pct": -0.01,
@@ -41,7 +41,7 @@
       "momentum": "FLAT",
       "mid": 157.211,
       "upper": 158.276,
-      "lower": 156.147
+      "lower": 156.146
     }
   ],
   "commentary": "方向感のない日は、休むも相場。無理に取りにいかない。",
